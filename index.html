@@ -1,77 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
-    <head>
-        <title>Elements Cubed</title>
-        <link rel="stylesheet" href="css/style.css">
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+:root {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    --base-shade-1: #741e96;
+    --white-shade-1: #ffffff;
+    --white-shade-2: #d7e1f3;
+    --black-shade-1: #232323;
+    --black-shade-2: #676a8b;
+    --grad-color-1: 133, 0, 250;
+    --grad-color-2: 82, 21, 250;
+  }
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b5a346e965.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        
-        <section class ="hero">
+head
+{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 
-            <img src="img/Website Background.png" div class="bg-image">
-            <div class="main-width">
-                <header>
-                </header>
+body
+{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-color: rgb(17, 0, 114);
+    overflow-x: auto;
+}
+.main-width{
+     width: 1080px;
+     max-width: 100%;
+     margin: 0 auto;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    right: .4in;
+}
+.content .main-text h1{
+    font-size: 50px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
+}
+.content .main-text h3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 5in;
+    right: 0in;
+    text-align: center;
+    width: 980px;
+    color: white;
+    line-height: 1.8;
+    font-size: 55px;
+}
+.content .main-text h4{
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    bottom: 2in;
+    right: -0.1in;
+    text-align: center;
+    width: 980px;
+    color: white;
+    line-height: 1.8;
+    font-size: 20px;
+}
+.content .main-text p{
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    bottom: 4in;
+    right: 0in;
+    text-align: center;
+    width: 980px;
+    color: white;
+    line-height: 1.8;
+    font-size: 28px;
+}
 
-                <div class="image">
-                    <img src="img/Logo.png">
-                </div>
+.content .main-text a{
+    display: inline-black;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    line-height: 1.4;
+    font-size:  14px;
+    font-weight: 500;
+}
+.content .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid #410a5c;
+    background: transparent;
+    color: white;
+    transition: .4s;
+}
+.content .social{
+    position: absolute;
+    bottom: 0.50in;
+    right: 5.9in;
+    z-index: 2;
+}
 
-                <div class="contacts">
-                    <a href="https://discord.gg/WvBKjamncK" target="_blank" div class="discord-image">
-                        <img src="img/Discord.png">
-                    </a>
-                    <a href="https://twitter.com/CubedElements" target="_blank" div class="twitter-image">
-                        <img src="img/Twitter.png">
-                    </a>
-                    <a href="https://www.instagram.com/bacon_studio_/" target="_blank" div class="instagram-image">
-                        <img src="img/Instagram.png">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCTnyQN34-FayT510T1GcFFQ" target="_blank" div class="youtube-image">
-                        <img src="img/Youtube.png">
-                    </a>
-                    <a href="http://presskit.elements-cubed.com" target="_blank" div class="presskit-image">
-                        <img src="img/Presskit.png">
-                    </a>
-                    
-                        
-                </div>
+.contacts .discord-image{
+    position: absolute;
+    transform: scale(0.03);
+    bottom: 7.25in;
+    right: 1in;
+    width: 5px;
+    height: 5px;
+    z-index: 2;
+}
 
-                <div class="content">                   
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-windows"></i></a>
-                        <a href="#"><i class="fa-brands fa-apple"></i></a>
-                        <a href="#"><i class="fa-brands fa-playstation"></i></a>
-                        <a href="#"><i class="fa-brands fa-xbox"></i></a>
-                        <a href="#"></a>
-                    </div>
+.contacts .twitter-image{
+    position: absolute;
+    transform: scale(0.03);
+    bottom: 7.25in;
+    right: 1.75in;
+    width: 5px;
+    height: 5px;
+    z-index: 2;
+}
 
-                    <a href="https://gamejolt.com/games/ElementsCubedDemo/749141" target="_blank" div class="update-image">
-                        <img src="img/Updates.png">
-                    </a>
+.contacts .instagram-image{
+    position: absolute;
+    transform: scale(0.03);
+    bottom: 7.25in;
+    right: 2.5in;
+    width: 5px;
+    height: 5px;
+    z-index: 2;
+}
 
-                    <div class="main-text">
-                        <a href="http://baconstudio.com" target="_blank">
-                            <u><h3>A Game By Bacon Studio</h3></u>
-                        </a>
-                        <p>A fast-paced bullet hell game where you <u><b>REK</b></u> Computer Viruses!
-                        </p>
-                        <h4>AVAILABLE SOON FOR</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
+.contacts .youtube-image{
+    position: absolute;
+    transform: scale(0.03);
+    bottom: 7.25in;
+    right: 3.25in;
+    width: 5px;
+    height: 5px;
+    z-index: 2;
+}
+
+.contacts .presskit-image{
+    position: absolute;
+    transform: scale(0.075);
+    bottom: 7.5in;
+    right: 15.25in;
+    width: 5px;
+    height: 5px;
+    z-index: 2;
+}
+
+.contacts .presskit-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .youtube-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .instagram-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .twitter-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .discord-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logo-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.content .social a{
+    display: inline-block;
+    color: white;
+    margin-right: 25px;
+    font-size: 32px;
+}
+.content .social a:hover
+{
+    transform: scale(1.2);
+    transition: .4s;
+    color: #410a5c;
+}
+
+.content .image img:hover
+{
+    transform: scale(2);
+    transition: 1s;
+}
+
+.image{
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    bottom: 3.5in;
+    right: 2.75in;
+    text-align: left;
+}
+.image img{
+    height: 100%;
+}
+
+.content .update-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.update-image{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 1.6in;
+    right: 6in;
+    text-align: center;
+}
+.update-image img{
+    height: 100%;
+}
+
+.bg-image{
+    width: 1495px;
+    height: 750px;
+}
+
+.hero .main-width .content .top-text{
+    font-family: 'Roboto', sans-serif;
+}
+
+.back-video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 100;
+}
+
+footer{
+    background-color: rgb(17, 0, 114);
+}
