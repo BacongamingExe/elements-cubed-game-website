@@ -156,6 +156,42 @@ body
     z-index: 2;
 }
 
+.contacts .presskit-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .youtube-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .instagram-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .twitter-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contacts .discord-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logo-image img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .content .social a{
     display: inline-block;
     color: white;
